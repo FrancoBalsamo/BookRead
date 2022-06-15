@@ -7,4 +7,18 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--Colores perzonalizados-->
+    <color name="tmoAzul">#2957BA</color>
+    <color name="tmoGris">#E9EAED</color>
+    <!--Nombre manga, diseño de transparencia-->
+    <color name="negroTransparente">#60111111</color>
+    <!--Demografías -->
+    <color name="tmoManga">#606DB0</color>
+    <color name="tmoManhwa">#5F9762</color>
+    <color name="tmoManhua">#7B6963</color>
+    <color name="tmoNovela">#BE5A5A</color>
+    <color name="tmoOneShot">#D05A82</color>
+    <color name="tmoDou">#CF9540</color>
+    <color name="tmoOel">#945D9D</color>
 </resources>

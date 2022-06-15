@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">BookRead</string>
     <string name="todo">TODO</string>
+    <string name="title_activity_lector_tmo">LectorTMO</string>
+
+    <!--Valores personalizados-->
+    <!--LectorTMO-->
+    <string name="tu">TU</string>
+    <string name="manga">MANGA</string>
+    <string name="online">ONLINE</string>
+    <string name="tmoPopulares">Populares</string>
+    <string name="tmoPSeinen">P. Seinen</string>
+    <string name="tmoPJosei">P. Josei</string>
 </resources>
