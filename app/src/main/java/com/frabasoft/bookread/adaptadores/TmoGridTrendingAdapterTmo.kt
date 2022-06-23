@@ -1,25 +1,24 @@
 package com.frabasoft.bookread.adaptadores
 
-import com.frabasoft.bookread.clases.TmoClase
-import androidx.recyclerview.widget.RecyclerView
-import android.view.ViewGroup
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.ProgressBar
-import android.widget.Toast
+import androidx.recyclerview.widget.RecyclerView
 import com.frabasoft.bookread.R
+import com.frabasoft.bookread.clases.TmoClase
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
 import java.util.ArrayList
 
-class TmoGridAdapterTmo(
-    private var tmoClaseArrayList: ArrayList<TmoClase>
-) : RecyclerView.Adapter<TmoGridAdapterTmo.ViewHolder>() {
+class TmoGridTrendingAdapterTmo (
+    private var tmoClaseArrayList: ArrayList<TmoClase>): RecyclerView.Adapter<TmoGridTrendingAdapterTmo.ViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         @SuppressLint("InflateParams") val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.grilla_populares, null)
+            LayoutInflater.from(parent.context).inflate(R.layout.grilla_trending_populares, null)
         return ViewHolder(view)
     }
 
@@ -29,7 +28,7 @@ class TmoGridAdapterTmo(
             .load(tmoClase.imagenUrl)
             .into(holder.portadaManga, object: Callback {
                 override fun onSuccess(){
-                    holder.pBGrillaPopulares.visibility = View.GONE
+                    holder.pBGrillaTrending.visibility = View.GONE
                 }
                 override fun onError(e: Exception){
 
@@ -43,10 +42,10 @@ class TmoGridAdapterTmo(
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var portadaManga: ImageView
-        var pBGrillaPopulares: ProgressBar
+        var pBGrillaTrending: ProgressBar
         init {
-            portadaManga = view.findViewById(R.id.ivPortadaPopulares)
-            pBGrillaPopulares = view.findViewById(R.id.pBGrillaPopulares)
+            portadaManga = view.findViewById(R.id.ivPortadaTrending)
+            pBGrillaTrending = view.findViewById(R.id.pBGrillaTrending)
         }
     }
 

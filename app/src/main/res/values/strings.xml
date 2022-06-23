@@ -11,4 +11,7 @@
     <string name="tmoPopulares">Populares</string>
     <string name="tmoPSeinen">P. Seinen</string>
     <string name="tmoPJosei">P. Josei</string>
+    <string name="tmoTrending">Trending</string>
+    <string name="tmoTSeinen">T. Seinen</string>
+    <string name="tmoTJosei">T. Josei</string>
 </resources>
